@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Film from './components/Film';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-
+import Admin from './components/Admin';
 
 function App() {
     return (
@@ -18,6 +18,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/film" element={<Film />} />
+                    <Route path="/admin" element={<Admin />} />
                 </Routes>
                 <Footer/>
             </div>
