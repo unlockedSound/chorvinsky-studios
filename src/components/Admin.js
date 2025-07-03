@@ -6,12 +6,10 @@ const Admin = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [activeTab, setActiveTab] = useState('files'); // 'files' or 'upload'
+    const [activeTab, setActiveTab] = useState('files');
     const [files, setFiles] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
-
-    // Check if user is already logged in on component mount
     useEffect(() => {
         const adminSession = localStorage.getItem('adminSession');
         if (adminSession === 'loggedIn') {
@@ -136,7 +134,6 @@ const Admin = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                {/* Tab Navigation */}
                 <div className="border-b border-gray-200 mb-6">
                     <nav className="-mb-px flex space-x-8">
                         <button
@@ -161,8 +158,6 @@ const Admin = () => {
                         </button>
                     </nav>
                 </div>
-
-                {/* Tab Content */}
                 {activeTab === 'files' && (
                     <FileManagementTab files={files} loading={loading} onFilesChange={fetchFiles} />
                 )}

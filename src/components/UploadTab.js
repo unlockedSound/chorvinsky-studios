@@ -13,7 +13,8 @@ const UploadTab = ({ onUploadComplete }) => {
         const newFiles = files.map(file => ({
             file,
             id: Math.random().toString(36).substr(2, 9),
-            category: 'home', // default category
+
+            category: 'home',
             status: 'pending'
         }));
         setSelectedFiles(prev => [...prev, ...newFiles]);
@@ -89,7 +90,6 @@ const UploadTab = ({ onUploadComplete }) => {
             }
 
             if (successful.length > 0) {
-                // Clear successful uploads after a delay
                 setTimeout(() => {
                     setSelectedFiles(prev => 
                         prev.filter(f => !successful.some(s => s.fileData.id === f.id))
