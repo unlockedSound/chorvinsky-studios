@@ -44,6 +44,32 @@ const Navigation = () => {
                         </div>
                     )}
                 </NavLink>
+                <NavLink
+                    to="/tango"
+                    className={({ isActive }) =>
+                        `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`
+                    }
+                >
+                    {({ isActive }) => (
+                        <div className="relative">
+                            <span>Tango</span>
+                            {isActive && indicator}
+                        </div>
+                    )}
+                </NavLink>
+                <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                        `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`
+                    }
+                >
+                    {({ isActive }) => (
+                        <div className="relative">
+                            <span>Contact</span>
+                            {isActive && indicator}
+                        </div>
+                    )}
+                </NavLink>
             </div>
         </nav>
     );

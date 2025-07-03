@@ -13,6 +13,7 @@ const UploadTab = ({ onUploadComplete }) => {
         const newFiles = files.map(file => ({
             file,
             id: Math.random().toString(36).substr(2, 9),
+
             category: 'home',
             status: 'pending'
         }));

@@ -10,7 +10,6 @@ const Admin = () => {
     const [files, setFiles] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
-
     useEffect(() => {
         const adminSession = localStorage.getItem('adminSession');
         if (adminSession === 'loggedIn') {
@@ -159,7 +158,6 @@ const Admin = () => {
                         </button>
                     </nav>
                 </div>
-
                 {activeTab === 'files' && (
                     <FileManagementTab files={files} loading={loading} onFilesChange={fetchFiles} />
                 )}
