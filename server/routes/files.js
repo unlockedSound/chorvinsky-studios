@@ -135,8 +135,13 @@ router.post('/auth/login', (req, res) => {
   const { username, password } = req.body;
   
   // Get credentials from environment variables
-  const adminUsername = process.env.ADMIN_USERNAME || 'brokenkey';
-  const adminPassword = process.env.ADMIN_PASSWORD || 'Xb#mB!&T5grk?HRs';
+  const adminUsername = process.env.ADMIN_USERNAME;
+  const adminPassword = process.env.ADMIN_PASSWORD;
+  
+  // Check if environment variables are set
+  if (!adminUsername || !adminPassword) {
+    return res.status(500).json({ success: false, message: 'Admin credentials not configured' });
+  }
   
   if (username === adminUsername && password === adminPassword) {
     res.json({ success: true, message: 'Login successful' });
