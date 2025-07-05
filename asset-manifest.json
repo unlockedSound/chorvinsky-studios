@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.76ca707e.css",
-    "main.js": "/static/js/main.074320f4.js",
-    "static/js/787.fa735e5f.chunk.js": "/static/js/787.fa735e5f.chunk.js",
-    "index.html": "/index.html",
-    "main.76ca707e.css.map": "/static/css/main.76ca707e.css.map",
-    "main.074320f4.js.map": "/static/js/main.074320f4.js.map",
-    "787.fa735e5f.chunk.js.map": "/static/js/787.fa735e5f.chunk.js.map"
+    "main.css": "/chorvinsky-studios/static/css/main.54edcae9.css",
+    "main.js": "/chorvinsky-studios/static/js/main.7031c4ce.js",
+    "static/js/453.21b54e5e.chunk.js": "/chorvinsky-studios/static/js/453.21b54e5e.chunk.js",
+    "index.html": "/chorvinsky-studios/index.html",
+    "main.54edcae9.css.map": "/chorvinsky-studios/static/css/main.54edcae9.css.map",
+    "main.7031c4ce.js.map": "/chorvinsky-studios/static/js/main.7031c4ce.js.map",
+    "453.21b54e5e.chunk.js.map": "/chorvinsky-studios/static/js/453.21b54e5e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76ca707e.css",
-    "static/js/main.074320f4.js"
+    "static/css/main.54edcae9.css",
+    "static/js/main.7031c4ce.js"
   ]
 }
